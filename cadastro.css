@@ -1,0 +1,62 @@
+body {
+    background-color:darkseagreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    justify-content: center; /* Centraliza os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #fefefe;
+    font-weight: bold;
+    margin-bottom: 40px; /* Espaço entre o título e o formulário */
+    margin-top: 2px;
+}
+
+form {
+    background-color:darkorchid;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+label {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #750202;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* butao */
+input[type="submit"] {
+    background-color:  rgb(71, 5, 100);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color:  rgb(102, 34, 132);
+    color: rgb(228, 225, 225);
+}
