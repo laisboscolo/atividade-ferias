@@ -1,0 +1,227 @@
+/* reset das configurações */
+body, ul, li, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Corpo da página */
+body {
+    background-color:darkseagreen;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color:darkorchid;
+    color: #fff;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+header .lista {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header .lista li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+header .lista li a:hover {
+    color: #ffcc80;
+}
+
+/* Seções principais */
+main {
+    padding: 20px 10%;
+}
+
+/* Estilos para cada seção */
+section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h1, section h2 {
+    color:darkorchid;
+    margin-bottom: 10px;
+}
+
+section img {
+    width: 30%;
+    border-radius: 8px;
+    margin: 15px auto; /* Adiciona espaçamento vertical */
+    display: block; /* Torna a imagem um elemento de bloco */
+}
+
+section p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Estilos específicos para a lista do cabeçalho */
+.lista li {
+    font-weight: bold;
+}
+
+.lista li a {
+    font-size: 1em;
+}
+aside {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin-left: auto;
+}
+
+aside h2 {
+    font-size: 1.8rem;
+    color: darkorchid;
+    margin-bottom: 15px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: darkorchid;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    background-color:darkorchid;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+
+}
+
+.footer-links a:hover {
+    text-decoration: none;
+    color:darkorchid;
+    background-color: darkorchid;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .lista {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    main {
+        padding: 20px 5%;
+    }
+
+
+/* Estilo para o footer */
+footer {
+    background-color:darkorchid /* Cor de fundo do footer */
+    color: white; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento superior e inferior */
+    text-align: center; /* Alinhamento centralizado */
+    font-size: 14px; /* Tamanho de fonte */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para o parágrafo dentro do footer */
+footer p {
+    margin: 5px 0; /* Espaçamento entre os parágrafos */
+}
+
+/* Estilo para o hover nos links (caso tenha links no footer no futuro) */
+footer a {
+    color: #f39c12; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    margin: 0 10px; /* Espaçamento entre os links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Sublinha o link quando o mouse passa */
+}
+
+/* Responsividade - Ajuste em dispositivos menores */
+@media (max-width: 600px) {
+    footer {
+        padding: 10px 0; /* Menos espaçamento em telas pequenas */
+    }
+    footer p {
+        font-size: 12px; /* Fonte menor em telas pequenas */
+    }
+}
