@@ -2,9 +2,9 @@ body {
     background-color:darkseagreen;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
-    flex-direction: column; /* Alinha os elementos verticalmente */
-    justify-content: center; /* Centraliza os elementos verticalmente */
-    align-items: center; /* Centraliza os elementos horizontalmente */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
     height: 100vh;
     margin: 0;
 }
@@ -12,7 +12,7 @@ body {
 h1 {
     color: #fefefe;
     font-weight: bold;
-    margin-bottom: 40px; /* Espaço entre o título e o formulário */
+    margin-bottom: 40px; 
     margin-top: 2px;
 }
 
@@ -32,18 +32,19 @@ form {
 label {
     font-size: 1rem;
     color: #ffffff;
+    font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"] {
     padding: 10px;
     font-size: 1rem;
-    border: 1px solid #750202;
+    border: 1px solid #7404a4;
     border-radius: 4px;
     font-weight: bold;
 }
 
-/* butao */
+/* botao */
 input[type="submit"] {
     background-color:  rgb(71, 5, 100);
     color: white;

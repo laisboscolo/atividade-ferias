@@ -3,7 +3,7 @@ include('conexao.php');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nome = mysqli_real_escape_string($conn, $_POST['nome']);
-    $email = mysqli_real_escape_string($conn, $_POST['email']); // Aplica md5 no email/senha
+    $email = mysqli_real_escape_string($conn, $_POST['email']); // 
 
     // Inserir o novo usuário no banco de dados
     $sql = "INSERT INTO usuarios (nome, email) VALUES ('$nome', '$email')";
